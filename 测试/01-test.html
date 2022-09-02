@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>格子图</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .box div {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            border-left: 1px solid blue;
+            border-top: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        .box div:nth-child(5n) {
+            border-right: 1px solid blue;
+        }
+
+        .box div:nth-last-child(1),
+        .box div:nth-last-child(2),
+        .box div:nth-last-child(3),
+        .box div:nth-last-child(4),
+        .box div:nth-last-child(5) {
+            border-bottom: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度搜索</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            background-color: white;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .logoBar {
+            width: 654px;
+            height: 188.4px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .logoBar img[alt=baidu] {
+            width: 270px;
+            height: 129px;
+            margin-top: 45px;
+        }
+
+        .searchBar {
+            width: 656px;
+            height: 44px;
+            margin: 0 auto;
+            position: relative;
+            background-color: inherit;
+        }
+
+        .searchBar input {
+            outline: none;
+        }
+
+        .searchBar input[type=text] {
+            width: 443px;
+            height: 16px;
+            padding: 12px 87px 12px 16px;
+            border: 2px solid #c4c7ce;
+            border-right: 0;
+            border-radius: 8px 0 0 8px;
+            display: block;
+            float: left;
+        }
+
+        .searchBar input[type=text]:hover {
+            border-color: #a7aab5;
+        }
+
+        .searchBar input[type=text]:focus {
+            border-bottom: 0;
+            border-color: #4e6ef2;
+            border-radius: 8px 0 0 0;
+        }
+
+        .searchBar input[type=submit] {
+            width: 106px;
+            height: 42px;
+            background-color: #4e6ef2;
+            color: white;
+            line-height: 44px;
+            font-size: 17px;
+            border: 1px solid #4e6ef2;
+            border-radius: 0 8px 8px 0;
+            box-sizing: content-box;
+            display: block;
+            cursor: pointer;
+        }
+
+        .soutu-btn {
+            width: 24px;
+            height: 20px;
+            background-image: url(pic/百度/nicon.png);
+            background-position: 0 -51px;
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            left: 506px;
+            top: 13px;
+        }
+
+        .soutu-btn:hover {
+            background-position: 0 -75px;
+        }
+
+        .historyBar {
+            width: 546px;
+            background-color: inherit;
+            border: 2px solid #4e6ef2;
+            border-top: 0;
+            border-radius: 0 0 8px 8px;
+            position: absolute;
+            top: 42px;
+            left: 0;
+            display: none;
+        }
+
+        .searchBar input[type=text]:focus~.historyBar {
+            display: block;
+        }
+
+        .divider {
+            width: 100%;
+            height: 6px;
+            width: 516px;
+            margin: 0 auto;
+            border-top: 2px solid #f5f5f6;
+        }
+
+        .historyBar li {
+            height: 25px;
+            line-height: 25px;
+            font-size: 13px;
+            color: #6b6f7d;
+            text-indent: 16px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .historyBar li:hover {
+            background-color: #f5f5f6;
+            color: #315efb;
+        }
+
+        .historyBar li:hover span.del {
+            display: block;
+        }
+
+        .historyBar li span.del {
+            color: #6b6f7d;
+            font-size: 13px;
+            position: absolute;
+            top: 0;
+            right: 16px;
+            display: none;
+        }
+
+        .historyBar li span.del:hover {
+            color: #315efb;
+        }
+
+        .footerBar {
+            height: 30px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+
+        .footerBar a {
+            width: 63px;
+            font-size: 13px;
+            text-decoration: none;
+            color: #6b6f7d;
+        }
+
+        .footerBar a:link {
+            color: #6b6f7d;
+        }
+
+        .footerBar a:visited {
+            color: #6b6f7d;
+        }
+
+        .footerBar a:hover {
+            color: #315efb;
+        }
+
+        .footerBar a:active {
+            color: #315efb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logoBar">
+        <img src="pic/百度/logo.png" alt="baidu">
+    </div>
+    <div class="searchBar">
+        <input type="text" name="searchTxt">
+        <input type="submit" value="百度一下">
+        <span class="soutu-btn"></span>
+        <div class="historyBar">
+            <div class="divider"></div>
+            <ul>
+                <li>Java<span class="del">删除</span></li>
+                <li>HTML5<span class="del">删除</span></li>
+                <li>MySQL<span class="del">删除</span></li>
+                <li>MyBatis<span class="del">删除</span></li>
+                <li>Spring<span class="del">删除</span></li>
+                <li>Netty<span class="del">删除</span></li>
+                <li>Kafka<span class="del">删除</span></li>
+                <li>JavaScript<span class="del">删除</span></li>
+            </ul>
+            <div class="footerBar">
+                <a href="#">关闭历史</a>
+                <a href="#">删除历史</a>
+                <a href="#">更多历史</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

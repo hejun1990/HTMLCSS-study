@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .ibm {
+            background-color: blue;
+        }
+
+        .qianfeng {
+            color: yellow;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>kerwin-111</div>
+    <div class="ibm qianfeng">kerwin-222</div>
+    <!-- 样式渲染的顺序以样式表内的顺序为准，与class内的顺序无关 -->
+    <div class="qianfeng ibm">kerwin-333</div>
+    <div class="ibm">kerwin-444</div>
+    <div>kerwin-555</div>
+    <div>kerwin-666</div>
+</body>
+
+</html>

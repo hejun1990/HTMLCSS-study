@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[name$=l][type*=r] {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get">
+        <div>
+            颜色选择：<input type="color" name="color">
+        </div>
+        <div>
+            邮箱：<input type="email" name="email">
+        </div>
+        <div>
+            url地址：<input type="url" name="url">
+        </div>
+        <div>
+            <!-- 手机端才有效果 -->
+            电话号码：<input type="tel" name="tel">
+        </div>
+        <div>
+            滑块：<input type="range" name="range" min="100" max="200" value="100" step="10">
+        </div>
+        <div>
+            数字：<input type="number" name="number" value="5" min="5" max="13" step="2">
+        </div>
+        <div>
+            搜索：<input type="search" name="search">
+        </div>
+        <div>
+            日期：<input type="date" name="date">
+            <br>
+            月份：<input type="month" name="month">
+            <br>
+            周：<input type="week" name="week">
+            <br>
+            时间：<input type="datetime-local" name="datetime">
+        </div>
+        <input type="submit" value="提交">
+    </form>
+</body>
+
+</html>

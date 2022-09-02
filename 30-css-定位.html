@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+            margin: 0 auto;
+            /* 
+                只要父元素设置了position
+                子元素就会以父元素为基础显示自身的位置
+            */
+            position: relative;
+            /* 
+                absolute：脱离文档流
+                relative：不脱离文档流
+            */
+            /* position: absolute;
+            top: 100px;
+            left: 100px; */
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="child"></div>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita aut, illum, quidem, totam aliquid ea
+        voluptatem autem dolores tempore magni eius odio. Tempora, quaerat harum neque aliquid placeat rem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quam accusantium eligendi architecto aspernatur
+        officia ut possimus reprehenderit ipsum laudantium quasi iusto similique ullam, voluptatum iure quos? Qui,
+        perspiciatis quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aut, asperiores obcaecati doloremque explicabo
+        repellendus dolores quae possimus veniam, a corporis. Deleniti enim at illum natus. Modi, id nihil. Modi.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam reprehenderit nisi doloremque magnam voluptas
+        vitae at consectetur unde, id, hic cumque qui facilis labore suscipit maxime asperiores. Quas, minima enim.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloribus optio ullam itaque facilis odit quam
+        debitis ratione nemo deleniti odio commodi dicta, illo eum ex sunt est inventore magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, praesentium? Corrupti sequi nam, reprehenderit
+        impedit asperiores iusto aspernatur illo voluptatum praesentium voluptatibus, atque odit eveniet, labore est
+        unde blanditiis. Dignissimos.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptates officia pariatur, blanditiis
+        vero, magni laboriosam exercitationem, quibusdam nam ducimus adipisci illo? Tempore sunt quam voluptas
+        laudantium? Consectetur, nihil natus.
+    </div>
+</body>
+
+</html>

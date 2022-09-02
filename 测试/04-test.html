@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 5px solid red;
+        }
+
+        .box p {
+            width: 100px;
+            border: 3px solid blue;
+        }
+
+        /* 
+            1、子元素一样时用:nth-child
+            2、子元素不一样时用:nth-of-type
+         */
+        .box h2:nth-child(1) {
+            background-color: gray;
+        }
+
+        .box p:nth-of-type(1) {
+            background-color: yellow;
+        }
+
+        .box p:nth-of-type(2) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>sssss</h2>
+        <p>111</p>
+        <p>222</p>
+    </div>
+</body>
+
+</html>

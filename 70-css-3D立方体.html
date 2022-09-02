@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D立方体</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 600px;
+            height: 600px;
+            border: 5px solid gray;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            position: relative;
+            transform: rotateX(-30deg) rotateY(30deg);
+        }
+
+        .box div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+            line-height: 200px;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            opacity: 0.7;
+        }
+
+        .box div:nth-child(1) {
+            background-color: red;
+            transform: translateZ(100px);
+        }
+
+        .box div:nth-child(2) {
+            background-color: cadetblue;
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+
+        .box div:nth-child(3) {
+            background-color: purple;
+            transform: translateY(-100px) rotateX(90deg);
+        }
+
+        .box div:nth-child(4) {
+            background-color: green;
+            transform: translateY(100px) rotateX(-90deg);
+        }
+
+        .box div:nth-child(5) {
+            background-color: lightgrey;
+            transform: translateX(100px) rotateY(90deg);
+        }
+
+        .box div:nth-child(6) {
+            background-color: darkblue;
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+
+</html>

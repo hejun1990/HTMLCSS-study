@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 群组选择器 */
+        div,
+        p,
+        h1,
+        .boxp {
+            background-color: yellow;
+        }
+
+        /* 后代选择器 */
+        div b {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>11111111</div>
+    <p>2222222</p>
+    <h1>3333333</h1>
+    <p class="boxp">44444444</p>
+    <div>
+        <b>5555555</b>
+    </div>
+
+    <div>
+        <div>aaaaa</div>
+        <p>
+            <b>bbbbbb</b>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+/* 
+    css优先级：
+    1、外部样式表 < 内部样式表 < 行内样式表
+    2、谁后面加!important谁优先级高
+    3、存在多个!important，优先级遵循第1条法则
+*/
+h1{
+    color: red!important;
+}

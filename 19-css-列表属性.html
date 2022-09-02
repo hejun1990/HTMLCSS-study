@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* li{
+            list-style-type: none;
+        } */
+        .li1 {
+            list-style-image: url(pic/序号1.png);
+        }
+
+        .li2 {
+            list-style-image: url(pic/序号2.png);
+        }
+
+        .li3 {
+            list-style-image: url(pic/序号3.png);
+        }
+
+        li {
+            border: 1px solid red;
+            list-style-position: inside;
+        }
+
+        /* 合并写法 */
+        .box {
+            list-style: none url(pic/序号1.png) inside;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="li1">武汉</li>
+        <li class="li2">长沙</li>
+        <li class="li3">成都</li>
+    </ul>
+
+    <ul class="box">
+        <li>南京</li>
+        <li>北京</li>
+        <li>上海</li>
+    </ul>
+</body>
+
+</html>

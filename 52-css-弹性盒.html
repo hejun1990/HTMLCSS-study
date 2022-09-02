@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            border: 2px solid black;
+            /* 弹性盒 */
+            display: flex;
+            /* 调整主轴方向 */
+            flex-direction: row;
+            /* 调整主轴对齐方向 */
+            justify-content: space-between;
+            /* 
+                调整侧轴
+                相对主轴而言，可以把主轴看成x轴，侧轴就是y轴
+                flex-direction: row，x轴是水平的，flex-direction: column，x轴是垂直的，则侧轴也对应旋转90°。
+            */
+            align-items: flex-start;
+            /* 折行 */
+            /* flex-wrap: wrap-reverse; */
+            /* 控制折行后的行间距 */
+            /* align-content: flex-start; */
+        }
+
+        .box span {
+            width: 100px;
+            height: 100px;
+            border: 1px dashed red;
+            /* margin: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 弹性盒是一种新的布局方式，特别适合移动布局 -->
+    <!-- 
+        对子元素的影响：
+        1、子元素默认横向排列
+        2、行内元素，变为块元素
+        3、子元素设置“margin: auto;”后，会水平垂直居中
+     -->
+    <div class="box">
+        <span>1111</span>
+        <span>2222</span>
+        <span>3333</span>
+        <span>4444</span>
+        <!-- <span>5555</span>
+        <span>6666</span>
+        <span>7777</span>
+        <span>8888</span> -->
+    </div>
+</body>
+
+</html>

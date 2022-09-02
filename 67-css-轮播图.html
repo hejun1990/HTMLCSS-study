@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 590px;
+            height: 470px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .swiper-wrapper {
+            width: 5500px;
+            height: 100%;
+            animation: lunbo 16s linear infinite;
+        }
+
+        .swiper-wrapper:hover {
+            animation-play-state: paused;
+        }
+
+        .swiper-slide {
+            float: left;
+        }
+
+        .swiper-slide img {
+            width: 590px;
+            height: 470px;
+        }
+
+        @keyframes lunbo {
+            0% {
+                transform: translateX(0px);
+            }
+
+            10.5% {
+                transform: translateX(0px);
+            }
+
+            12.5% {
+                transform: translateX(-590px);
+            }
+
+            23% {
+                transform: translateX(-590px);
+            }
+
+            25% {
+                transform: translateX(-1180px);
+            }
+
+            35.5% {
+                transform: translateX(-1180px);
+            }
+
+            37.5% {
+                transform: translateX(-1770px);
+            }
+
+            48% {
+                transform: translateX(-1770px);
+            }
+
+            50% {
+                transform: translateX(-2360px);
+            }
+
+            60.5% {
+                transform: translateX(-2360px);
+            }
+
+            62.5% {
+                transform: translateX(-2950px);
+            }
+
+            73% {
+                transform: translateX(-2950px);
+            }
+
+            75% {
+                transform: translateX(-3540px);
+            }
+
+            85.5% {
+                transform: translateX(-3540px);
+            }
+
+            87.5% {
+                transform: translateX(-4130px);
+            }
+
+            98% {
+                transform: translateX(-4130px);
+            }
+
+            100% {
+                transform: translateX(-4720px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="pic/轮播图/1.webp" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/轮播图/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/轮播图/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/轮播图/4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/轮播图/5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/轮播图/6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/轮播图/7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="pic/轮播图/8.jpg" alt="">
+            </div>
+            <!-- 最后一张和第一张一样，使轮播无缝衔接 -->
+            <div class="swiper-slide">
+                <img src="pic/轮播图/1.webp" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

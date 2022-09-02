@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        /* 不显示滚动条 */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 45px;
+            background-color: gray;
+        }
+
+        header ul {
+            display: flex;
+            overflow-x: auto;
+        }
+
+        header ul li {
+            /* 不压缩自身，按内容大小横向展开 */
+            flex-shrink: 0;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            padding: 0 8px;
+            color: #fff;
+        }
+
+        header ul li:hover {
+            color: #e96062;
+            background-color: white;
+        }
+
+        footer {
+            height: 50px;
+            background-color: gray;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            overflow-y: auto;
+        }
+
+        section ul {
+            width: 85px;
+            overflow-y: auto;
+        }
+
+        section ul li {
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #f8f8f8;
+        }
+
+        section ul li:hover {
+            color: #e96062;
+            background-color: white;
+        }
+
+        section .content {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: center;
+            overflow-y: auto;
+        }
+
+        section .content>div {
+            height: 107px;
+            width: 100px;
+            text-align: center;
+        }
+
+        section .content>div>img {
+            width: 70px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        section .content>div>p {
+            height: 35px;
+            margin-top: 2px;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>热门推荐</li>
+            <li>手机数码</li>
+            <li>京东超市</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+            <li>玩具乐器</li>
+            <li>家居厨具</li>
+            <li>家居家装</li>
+            <li>男装</li>
+            <li>男鞋</li>
+            <li>女装</li>
+            <li>女鞋</li>
+            <li>美妆护肤</li>
+            <li>医药保健</li>
+            <li>酒水饮料</li>
+            <li>运动户外</li>
+            <li>汽车生活</li>
+            <li>礼品鲜花</li>
+            <li>京东国际</li>
+            <li>宠物生活</li>
+            <li>二手商品</li>
+            <li>拍卖</li>
+            <li>箱包手袋</li>
+            <li>钟表珠宝</li>
+            <li>农资绿植</li>
+            <li>生活旅行</li>
+            <li>奢侈品</li>
+            <li>艺术邮币</li>
+        </ul>
+    </header>
+    <section>
+        <ul>
+            <li>热门推荐</li>
+            <li>手机数码</li>
+            <li>京东超市</li>
+            <li>家用电器</li>
+            <li>电脑办公</li>
+            <li>玩具乐器</li>
+            <li>家居厨具</li>
+            <li>家居家装</li>
+            <li>男装</li>
+            <li>男鞋</li>
+            <li>女装</li>
+            <li>女鞋</li>
+            <li>美妆护肤</li>
+            <li>医药保健</li>
+            <li>酒水饮料</li>
+            <li>运动户外</li>
+            <li>汽车生活</li>
+            <li>礼品鲜花</li>
+            <li>京东国际</li>
+            <li>宠物生活</li>
+            <li>二手商品</li>
+            <li>拍卖</li>
+            <li>箱包手袋</li>
+            <li>钟表珠宝</li>
+            <li>农资绿植</li>
+            <li>生活旅行</li>
+            <li>奢侈品</li>
+            <li>艺术邮币</li>
+        </ul>
+        <div class="content">
+            <div>
+                <img src="pic/京东分类页面/空调.jpg" alt="空调">
+                <p>空调</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/冰箱.jpg" alt="冰箱">
+                <p>冰箱</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/电脑.png" alt="电脑">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/手机.png" alt="手机">
+                <p>手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/全面屏手机.jpg" alt="全面屏手机">
+                <p>全面屏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/保健品.jpg" alt="保健品">
+                <p>保健品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/游戏手机.jpg" alt="游戏手机">
+                <p>游戏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/口罩.jpg" alt="口罩">
+                <p>口罩</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/驱蚊用品.jpg" alt="驱蚊用品">
+                <p>驱蚊用品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/空调.jpg" alt="空调">
+                <p>空调</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/冰箱.jpg" alt="冰箱">
+                <p>冰箱</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/电脑.png" alt="电脑">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/手机.png" alt="手机">
+                <p>手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/全面屏手机.jpg" alt="全面屏手机">
+                <p>全面屏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/保健品.jpg" alt="保健品">
+                <p>保健品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/游戏手机.jpg" alt="游戏手机">
+                <p>游戏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/口罩.jpg" alt="口罩">
+                <p>口罩</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/驱蚊用品.jpg" alt="驱蚊用品">
+                <p>驱蚊用品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/空调.jpg" alt="空调">
+                <p>空调</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/冰箱.jpg" alt="冰箱">
+                <p>冰箱</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/电脑.png" alt="电脑">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/手机.png" alt="手机">
+                <p>手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/全面屏手机.jpg" alt="全面屏手机">
+                <p>全面屏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/保健品.jpg" alt="保健品">
+                <p>保健品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/游戏手机.jpg" alt="游戏手机">
+                <p>游戏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/口罩.jpg" alt="口罩">
+                <p>口罩</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/驱蚊用品.jpg" alt="驱蚊用品">
+                <p>驱蚊用品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/空调.jpg" alt="空调">
+                <p>空调</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/冰箱.jpg" alt="冰箱">
+                <p>冰箱</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/电脑.png" alt="电脑">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/手机.png" alt="手机">
+                <p>手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/全面屏手机.jpg" alt="全面屏手机">
+                <p>全面屏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/保健品.jpg" alt="保健品">
+                <p>保健品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/游戏手机.jpg" alt="游戏手机">
+                <p>游戏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/口罩.jpg" alt="口罩">
+                <p>口罩</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/驱蚊用品.jpg" alt="驱蚊用品">
+                <p>驱蚊用品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/空调.jpg" alt="空调">
+                <p>空调</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/冰箱.jpg" alt="冰箱">
+                <p>冰箱</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/电脑.png" alt="电脑">
+                <p>电脑</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/手机.png" alt="手机">
+                <p>手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/全面屏手机.jpg" alt="全面屏手机">
+                <p>全面屏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/保健品.jpg" alt="保健品">
+                <p>保健品</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/游戏手机.jpg" alt="游戏手机">
+                <p>游戏手机</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/口罩.jpg" alt="口罩">
+                <p>口罩</p>
+            </div>
+            <div>
+                <img src="pic/京东分类页面/驱蚊用品.jpg" alt="驱蚊用品">
+                <p>驱蚊用品</p>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>足球圈</title>
+
+    <link rel="stylesheet" href="css/font-zhifubao/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 44px;
+            background-color: #0cc400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header div {
+            width: 60px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 12px;
+            color: #a9e4b4;
+            background-color: #3dd066;
+        }
+
+        header div:hover {
+            color: #fff;
+            background-color: #63d985;
+        }
+
+        header div:nth-child(1) {
+            border-radius: 12px 0 0 12px;
+        }
+
+        header div:nth-child(2) {
+            border-radius: 0 12px 12px 0;
+        }
+
+        section {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        section ul {
+            display: flex;
+            position: sticky;
+            top: 0px;
+            background-color: rgba(255, 255, 255, 0.98);
+        }
+
+        section ul li {
+            flex: 1;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px solid #d9d9d9;
+            box-sizing: border-box;
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+
+        section ul li:hover {
+            border-bottom: 2.5px solid #08c631;
+            color: #14bf4d;
+        }
+
+
+        section .list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        section .list>div {
+            width: 49%;
+            margin-top: 4px;
+            border: 1px solid gray;
+        }
+
+        section .list>div>img {
+            width: 100%;
+        }
+
+        section .list>div>p {
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            text-indent: 10px;
+        }
+
+        footer {
+            height: 44px;
+            background-color: white;
+            color: #d5d5d7;
+        }
+
+        footer ul {
+            height: 100%;
+            display: flex;
+        }
+
+        footer ul li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        footer ul li:hover {
+            color: #08ca43;
+        }
+
+        footer ul li i.iconfont {
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        footer ul li:nth-child(3) {
+            position: relative;
+        }
+
+        footer ul li:nth-child(3) i.iconfont {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #dadada;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            margin-left: -25px;
+            top: -8px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 50px;
+            background-color: white;
+        }
+
+        footer ul li:nth-child(3):hover i.iconfont {
+            border-color: #08ca43;
+        }
+
+        footer ul li span {
+            height: 12px;
+            line-height: 12px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>热点</div>
+        <div>关注</div>
+    </header>
+    <section>
+        <ul>
+            <li>足球现场</li>
+            <li>足球生活</li>
+            <li>足球美女</li>
+        </ul>
+
+        <div class="list">
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+            <div>
+                <img src="pic/足球圈/小丸子.png" alt="小丸子">
+                <p>樱桃小丸子啊小丸子！</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <i class="iconfont icon-home"></i>
+                <span>首页</span>
+            </li>
+            <li>
+                <i class="iconfont icon-explore"></i>
+                <span>发现</span>
+            </li>
+            <li>
+                <i class="iconfont icon-picture"></i>
+            </li>
+            <li>
+                <i class="iconfont icon-peoplefill"></i>
+                <span>我的</span>
+            </li>
+            <li>
+                <i class="iconfont icon-trash"></i>
+                <span>退出</span>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .box .item {
+            float: left;
+            width: 148px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: blue;
+            color: white;
+            line-height: 40px;
+        }
+
+        .item:hover {
+            background-color: lightblue;
+        }
+
+        .item ul {
+            display: none;
+            background-color: white;
+            color: black;
+        }
+
+        .item:hover ul {
+            display: block;
+        }
+
+        .item ul li:hover {
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li class="item">
+            视频教程
+            <ul>
+                <li>HTML5视频教程</li>
+                <li>Java视频教程</li>
+                <li>Python视频教程</li>
+                <li>UI视频教程</li>
+                <li>网络安全视频教程</li>
+            </ul>
+        </li>
+        <li class="item">
+            认证考试
+            <ul>
+                <li>PMP认证</li>
+                <li>Red Hat认证</li>
+                <li>华为工程师认证</li>
+                <li>软考认证</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

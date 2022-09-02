@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>线性渐变</title>
+
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 10px solid gray;
+            /* background: linear-gradient(red, orange, yellow, green, cyan, blue, purple); */
+            /* 线性变化方向，默认 to bottom */
+            /* background: linear-gradient(to bottom, red, blue); */
+            /* 
+                支持的方向写法
+                to left, to bottom left, to top right, .......
+            */
+            /* background: linear-gradient(to left bottom, red, blue); */
+
+            /* 支持角度写法 */
+            background: linear-gradient(90deg, red, blue);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

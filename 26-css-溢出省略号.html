@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 200px;
+            background-color: yellowgreen;
+            /* 
+                单行文本溢出显示省略号需要同时设置以下声明：
+                1、容器宽度：width: 200px;
+                2、强制文本在一行内显示：white-space: nowrap;
+                3、溢出内容为隐藏：overflow: hidden;
+                4、溢出文本显示省略号：text-overflow: ellipsis;
+            */
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorum ab reprehenderit, adipisci soluta error
+        tempora enim pariatur praesentium perferendis consequuntur iure sapiente? Rerum quaerat facere enim magni totam
+        libero.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in tenetur omnis officia consectetur quis
+        nobis pariatur quaerat esse, commodi ad voluptates blanditiis libero enim architecto numquam fugit veniam. In.
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+    </div>
+
+    <!-- <pre>
+        预格式化文本：保留空格，tab，回车
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+        }
+    </pre> -->
+
+    <pre>
+        white-space属性值：
+        normal
+          连续的空白符会被合并，换行符会被当作空白符来处理。换行在填充「行框盒子 (line boxes)」时是必要。
+        nowrap
+          和 normal 一样，连续的空白符会被合并。但文本内的换行无效。
+        pre
+          连续的空白符会被保留。在遇到换行符或者&lt;br&gt;元素时才会换行。
+        pre-wrap
+          连续的空白符会被保留。在遇到换行符或者&lt;br&gt;元素，或者需要为了填充「行框盒子 (line boxes)」时才会换行。
+        pre-line
+          连续的空白符会被合并。在遇到换行符或者&lt;br&gt;元素，或者需要为了填充「行框盒子 (line boxes)」时会换行。
+        break-spaces
+          与 pre-wrap的行为相同，除了：
+
+          任何保留的空白序列总是占用空间，包括在行尾。
+          每个保留的空格字符后都存在换行机会，包括空格字符之间。
+          这样保留的空间占用空间而不会挂起，从而影响盒子的固有尺寸（最小内容大小和最大内容大小）。
+    </pre>
+</body>
+
+</html>

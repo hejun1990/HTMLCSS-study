@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .box {
+            width: 500px;
+            height: 300px;
+            border: 2px solid #c3bfbf;
+            border-radius: 5px;
+            margin-top: 0.5em;
+            font-size: 16px;
+            position: relative;
+            background-color: inherit;
+        }
+
+        .box .title {
+            height: 16px;
+            line-height: 16px;
+            padding: 0 0.6em;
+            position: absolute;
+            left: 1.5em;
+            top: -0.5em;
+            background-color: inherit;
+        }
+
+        fieldset{
+            width: 400px;
+            height: 200px;
+            border-color: blue;
+        }
+
+        legend{
+            border: 1px solid red;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span class="title"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>&nbsp;&nbsp;发运需求</span>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend><i class="fa fa-chevron-circle-up" aria-hidden="true"></i>&nbsp;&nbsp;发运需求</legend>
+            运单号：<input type="text" value="" placeholder="输入运单号">
+        </fieldset>
+    </div>
+</body>
+
+</html>

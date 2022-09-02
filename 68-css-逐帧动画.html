@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逐帧动画</title>
+
+    <style>
+        div {
+            width: 560px;
+            height: 375px;
+            background-image: url(pic/逐帧动画/1.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 20px auto;
+            animation: action 1s step-end infinite;
+            animation-timing-function: s;
+        }
+
+        @keyframes action {
+            0% {
+                background-image: url(pic/逐帧动画/1.png);
+            }
+
+            6.67% {
+                background-image: url(pic/逐帧动画/2.png);
+            }
+
+            13.33% {
+                background-image: url(pic/逐帧动画/3.png);
+            }
+
+            20% {
+                background-image: url(pic/逐帧动画/4.png);
+            }
+
+            26.67% {
+                background-image: url(pic/逐帧动画/5.png);
+            }
+
+            33.33% {
+                background-image: url(pic/逐帧动画/6.png);
+            }
+
+            40% {
+                background-image: url(pic/逐帧动画/7.png);
+            }
+
+            46.67% {
+                background-image: url(pic/逐帧动画/8.png);
+            }
+
+            53.33% {
+                background-image: url(pic/逐帧动画/9.png);
+            }
+
+            60% {
+                background-image: url(pic/逐帧动画/10.png);
+            }
+
+            66.67% {
+                background-image: url(pic/逐帧动画/11.png);
+            }
+
+            73.33% {
+                background-image: url(pic/逐帧动画/12.png);
+            }
+
+            80% {
+                background-image: url(pic/逐帧动画/13.png);
+            }
+
+            86.67% {
+                background-image: url(pic/逐帧动画/14.png);
+            }
+
+            93.33% {
+                background-image: url(pic/逐帧动画/15.png);
+            }
+
+            /* 
+                最后一帧看不到，配合animation-timing-function: step-end,
+                可以保证前面帧数都能看到。 
+            */
+            100% {
+                background-image: url(pic/逐帧动画/15.png);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
