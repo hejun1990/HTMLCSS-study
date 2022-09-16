@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        ul {
+            width: 800px;
+            height: 800px;
+            border: 5px solid pink;
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+
+        li {
+            border: 1px solid skyblue;
+            background-color: purple;
+            color: white;
+            font-size: 50px;
+
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li:nth-child(1),
+        li:nth-child(2),
+        li:nth-child(3),
+        li:nth-child(4) {
+            width: 200px;
+            height: 200px;
+        }
+
+        li:nth-child(5),
+        li:nth-child(6),
+        li:nth-child(7),
+        li:nth-child(8){
+            flex: 1;
+            height: calc(100% - 200px);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+
+</html>
